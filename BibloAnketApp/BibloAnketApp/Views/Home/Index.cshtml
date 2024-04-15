@@ -1,0 +1,45 @@
+﻿
+@model HomePageViewModel    
+<div class="container mt-5">
+    <div class="row">
+        
+        <div class="col-md-3">
+            <div id="form" class="list-group mt-4 text-center border">
+                <a href="/home/listele" class="list-group-item list-group-item-action bn text-primary-emphasis">Tüm Anketler</a>
+                </a>
+                @foreach (var Kategori in Model.Kategoriler)
+                {
+                    <a href="/home/listele/@(Kategori.Id)" class="list-group-item list-group-item-action bn text-primary-emphasis">@Kategori.Ad</a>
+                }
+            </div>
+        </div>
+
+        <div style="margin-top=25px" class="col-md-9">
+            <div class="row">
+                <h2 style="margin-left: 30%; margin-bottom: 3%; ">Haftanın Anketleri</h2>
+                @foreach (var Anket in Model.HaftanınAnketleri)
+                {
+
+                    <div class="col-md-3">
+                        <a href="home/detay/@(Anket.Id)">
+                            <div class="card text-center bn img-size align-items-center" style="width: 15rem; ">
+                                <img src="/img/@(Anket.Resim)" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">@Anket.Ad</h5>
+                                    <p class="card-text">@Anket.KısaAciklama</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                }
+            </div>
+            </div>
+        
+
+
+    </div>
+    </div>
+    </div>

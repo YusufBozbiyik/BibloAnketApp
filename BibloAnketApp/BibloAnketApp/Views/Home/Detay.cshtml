@@ -1,0 +1,59 @@
+﻿@model Anket
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>@Model.Ad</h2>
+            <div class="fs-5-5">
+                <p>
+                    @Model.DetayAciklamaUst;
+                </p>
+                
+                <p>
+                  
+                        <img style="width:250px;"  class="mb-4 " src="/img/@Model.Resim" alt="">
+                        <span style="position: absolute; top: 10%; left: 30%;">
+                            <h2>
+                                Bu Testi Puanlayın
+                            </h2>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <form>
+                                <div style="width: 100%;" class="form-group mt-5">
+                                    <label for="exampleFormControlInput1">E-posta Adresi</label>
+                                    <input style="width:300px;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div style="width: 150%; height: 125%;" class="form-group mt-4">
+                                    <label for="exampleFormControlTextarea1">Değerlendirme</label>
+                                    <textarea style="width:500px;" class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <a name=""
+                                   id=""
+                                   class="btn btn-primary mt-4"
+                                   href="#"
+                                   role="button">Gönder</a>
+
+                            </form>
+                        </span>
+                </p>
+
+                    
+                
+
+                <p class="">@Model.DetayAciklamaAlt;
+                </p>
+                
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary-subtle bg-gradient  ">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bold font-monospace" href="/home">BibloAnket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item fs-4">
+                        <a class="nav-link active me-2 " href="#">Testler</a>
+                    </li>
+
+                    <li class="nav-item fs-4">
+                        <a class="nav-link active me-2" href="#">Kişilikler</a>
+                    </li>
+
+                    <li class="nav-item fs-4">
+                        <a class="nav-link active me-2" href="#">İletişim</a>
+                    </li>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 input-search" type="search" placeholder="Anket Ara" aria-label="Anket Ara">
+                        <button class="btn btn-light width-150" type="submit">Anket Ara</button>
+                    </form>
+
+                </ul>
+                <form class="d-flex" role="uye">
+                    <button class="btn btn-light me-4 " type="submit">Üye Ol</button>
+
+                    <button class="btn btn-light " type="submit">Giriş Yap</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+        @RenderBody()
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
